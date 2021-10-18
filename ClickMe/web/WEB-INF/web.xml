@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+	<display-name>ClickMe_Semi</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+<servlet>
+    <servlet-name>signup</servlet-name>
+    <jsp-file>/WEB-INF/views/user/signup.jsp</jsp-file>                                            
+</servlet>
+<servlet-mapping>
+    <servlet-name>signup</servlet-name>                                                        
+    <url-pattern>/signup</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>userStatus</servlet-name>
+    <jsp-file>/WEB-INF/views/user/userStatus.jsp</jsp-file>                                            
+</servlet>
+<servlet-mapping>
+     <servlet-name>userStatus</servlet-name>                                                        
+     <url-pattern>/user/status</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>usertest</servlet-name>
+    <jsp-file>/WEB-INF/views/user/userTest.jsp</jsp-file>                                            
+</servlet>
+<servlet-mapping>
+     <servlet-name>usertest</servlet-name>                                                        
+     <url-pattern>/usertest</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>userIdFind</servlet-name>
+    <jsp-file>/WEB-INF/views/user/userIdFind.jsp</jsp-file>                                            
+</servlet>
+<servlet-mapping>
+     <servlet-name>userIdFind</servlet-name>                                                        
+     <url-pattern>/user/idFindPage</url-pattern>
+</servlet-mapping>
+<servlet>
+     <servlet-name>inquiryForm</servlet-name>
+     <jsp-file>/WEB-INF/views/inquiry/insertInquiryForm.jsp</jsp-file>                                       
+</servlet>
+<servlet-mapping>
+     <servlet-name>inquiryForm</servlet-name>                                                        
+     <url-pattern>/inquiryForm</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>postInsertForm</servlet-name>
+	<jsp-file>/WEB-INF/views/post/insertPost.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+	<servlet-name>postInsertForm</servlet-name>
+	<url-pattern>/postInsertForm</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>modifyPostBlind</servlet-name>
+	<jsp-file>/WEB-INF/views/post/modifyPostBlind.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+	<servlet-name>modifyPostBlind</servlet-name>
+	<url-pattern>/modifyPostBlind</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>modifyPostForm</servlet-name>
+	<jsp-file>/WEB-INF/views/post/modifyPost.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+	<servlet-name>modifyPostForm</servlet-name>
+	<url-pattern>/modifyPostForm</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>deletePostForm</servlet-name>
+	<jsp-file>/WEB-INF/views/post/deletePost.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+	<servlet-name>deletePostForm</servlet-name>
+	<url-pattern>/deletePostForm</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>logIn</servlet-name>
+	<jsp-file>/WEB-INF/views/user/logInField.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+	<servlet-name>logIn</servlet-name>
+	<url-pattern>/logIn</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>logOut</servlet-name>
+	<jsp-file>/WEB-INF/views/user/logOutField.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+	<servlet-name>logOut</servlet-name>
+	<url-pattern>/logOUt</url-pattern>
+</servlet-mapping>
+</web-app>
